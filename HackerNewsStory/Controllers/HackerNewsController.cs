@@ -44,7 +44,7 @@ namespace HackerNewsStory.Controllers
                         if (!String.IsNullOrEmpty(searchItem))
                         {
                             var search = searchItem.ToLower();
-                            filteredstories = filteredstories.Where(s => s.title.ToLower().IndexOf(search) > -1 || s.by.ToLower().IndexOf(search) > -1).ToList();
+                            filteredstories = filteredstories.Where(s => s.title.ToLower().IndexOf(search) > -1).ToList();
                         }
                     }
                     else
