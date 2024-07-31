@@ -4,12 +4,12 @@
     "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsStory\\HackerNewsStory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj": {
+    "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj",
-        "projectName": "HackerNews.Service",
-        "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj",
+        "projectUniqueName": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj",
+        "projectName": "HackerNewsService",
+        "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj",
         "packagesPath": "C:\\Users\\2329810\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\obj\\",
         "projectStyle": "PackageReference",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj": {
-                "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj"
+              "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj": {
+                "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj"
               }
             }
           }

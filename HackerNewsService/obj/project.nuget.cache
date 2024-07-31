@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Q3QHCTxJqw=",
+  "dgSpecHash": "IUOcTVQdLVc=",
   "success": false,
-  "projectFilePath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj",
+  "projectFilePath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2329810\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\2329810\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
@@ -16,8 +16,8 @@
     {
       "code": "NU1108",
       "level": "Error",
-      "message": "Cycle detected. \r\n  HackerNews.Service -> HackerNewsStory -> HackerNews.Service.",
-      "libraryId": "HackerNews.Service",
+      "message": "Cycle detected. \r\n  HackerNewsService -> HackerNewsStory -> HackerNewsService.",
+      "libraryId": "HackerNewsService",
       "targetGraphs": [
         "net8.0"
       ]

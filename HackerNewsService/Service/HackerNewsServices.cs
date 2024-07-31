@@ -4,14 +4,14 @@ using HackerNewsStory.Model;
 using Microsoft.Extensions.Caching.Memory;
 using System.Net.Http.Json;
 
-namespace HackerNews.Service.Service
+namespace HackerNewsService.Service
 {
-    public class HackerNewsService : IHackerNewsService
+    public class HackerNewsServices : IHackerNewsService
     {
         private readonly HttpClient _client;
         private readonly IMemoryCache _cache;
 
-        public HackerNewsService(HttpClient client, IMemoryCache cache) {
+        public HackerNewsServices(HttpClient client, IMemoryCache cache) {
             _client = client;
             _cache = cache;
         }

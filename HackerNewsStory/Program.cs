@@ -10,7 +10,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
-builder.Services.AddTransient<IHackerNewsService, HackerNewsService>();
+builder.Services.AddTransient<IHackerNewsService, HackerNewsServices>();
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", builder =>
 {
     builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();

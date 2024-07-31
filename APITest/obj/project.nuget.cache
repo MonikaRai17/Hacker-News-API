@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bhOvAZd+Xy4=",
+  "dgSpecHash": "IKIAYmrdveA=",
   "success": false,
   "projectFilePath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\APITest\\APITest.csproj",
   "expectedPackageFiles": [
@@ -107,7 +107,7 @@
     {
       "code": "NU1108",
       "level": "Error",
-      "message": "Cycle detected. \r\n  APITest -> HackerNewsStory -> HackerNews.Service -> HackerNewsStory.",
+      "message": "Cycle detected. \r\n  APITest -> HackerNewsStory -> HackerNewsService -> HackerNewsStory.",
       "libraryId": "HackerNewsStory",
       "targetGraphs": [
         "net8.0"

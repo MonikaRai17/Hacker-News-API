@@ -104,7 +104,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "HackerNews.Service": "1.0.0",
+          "HackerNewsService": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -497,9 +497,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj",
-      "projectName": "HackerNews.Service",
-      "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNews.Service.csproj",
+      "projectUniqueName": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj",
+      "projectName": "HackerNewsService",
+      "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj",
       "packagesPath": "C:\\Users\\2329810\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\obj\\",
       "projectStyle": "PackageReference",
@@ -563,8 +563,8 @@
     {
       "code": "NU1108",
       "level": "Error",
-      "message": "Cycle detected. \r\n  HackerNews.Service -> HackerNewsStory -> HackerNews.Service.",
-      "libraryId": "HackerNews.Service",
+      "message": "Cycle detected. \r\n  HackerNewsService -> HackerNewsStory -> HackerNewsService.",
+      "libraryId": "HackerNewsService",
       "targetGraphs": [
         "net8.0"
       ]
