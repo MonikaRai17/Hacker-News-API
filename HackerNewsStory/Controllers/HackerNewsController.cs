@@ -18,6 +18,11 @@ namespace HackerNewsStory.Controllers
         }
 
         
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="searchItem"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetNewsStory(string? searchItem)
         {
@@ -35,6 +40,10 @@ namespace HackerNewsStory.Controllers
                     {
                         var search = searchItem.ToLower();
                         filteredstories = response.Where(s => s.title.ToLower().IndexOf(search) > -1).ToList();
+                        if (filteredstories.Count == 0)
+                        {
+                            return NotFound();
+                        }
                         return Ok(filteredstories);
                     }
                     else

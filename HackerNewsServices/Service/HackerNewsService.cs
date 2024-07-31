@@ -15,6 +15,10 @@ namespace HackerNewsServices.Service
             _cache = cache;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<Story>> GetTopStoryList()
         {
             var cacheKey = "newstories";
