@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -12,14 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HackerNewsService\HackerNewsService.csproj" />
-   
+    <ProjectReference Include="..\HackerNewsModel\HackerNewsModel.csproj" />
+    <ProjectReference Include="..\HackerNewsServices\HackerNewsServices.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="HackerNewsStory">
-      <HintPath>obj\Debug\net8.0\ref\HackerNewsStory.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+ 
 
 </Project>

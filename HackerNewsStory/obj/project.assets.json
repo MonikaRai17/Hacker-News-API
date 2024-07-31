@@ -13,6 +13,41 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -102,17 +137,28 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "HackerNewsService/1.0.0": {
+      "HackerNewsModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/HackerNewsModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HackerNewsModel.dll": {}
+        }
+      },
+      "HackerNewsServices/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "HackerNewsStory": "1.0.0"
+          "HackerNewsModel": "1.0.0",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0"
         },
         "compile": {
-          "bin/placeholder/HackerNewsService.dll": {}
+          "bin/placeholder/HackerNewsServices.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HackerNewsService.dll": {}
+          "bin/placeholder/HackerNewsServices.dll": {}
         }
       }
     }
@@ -349,6 +395,66 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
+    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+      "sha512": "3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "sha512": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "lib/net462/Microsoft.Extensions.Primitives.dll",
+        "lib/net462/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net8.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -477,15 +583,21 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "HackerNewsService/1.0.0": {
+    "HackerNewsModel/1.0.0": {
       "type": "project",
-      "path": "../HackerNewsService/HackerNewsService.csproj",
-      "msbuildProject": "../HackerNewsService/HackerNewsService.csproj"
+      "path": "../HackerNewsModel/HackerNewsModel.csproj",
+      "msbuildProject": "../HackerNewsModel/HackerNewsModel.csproj"
+    },
+    "HackerNewsServices/1.0.0": {
+      "type": "project",
+      "path": "../HackerNewsServices/HackerNewsServices.csproj",
+      "msbuildProject": "../HackerNewsServices/HackerNewsServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "HackerNewsService >= 1.0.0",
+      "HackerNewsModel >= 1.0.0",
+      "HackerNewsServices >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -518,8 +630,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj": {
-              "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsService\\HackerNewsService.csproj"
+            "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsModel\\HackerNewsModel.csproj": {
+              "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsModel\\HackerNewsModel.csproj"
+            },
+            "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsServices\\HackerNewsServices.csproj": {
+              "projectPath": "C:\\Users\\2329810\\source\\repos\\Hacker-News-API\\HackerNewsServices\\HackerNewsServices.csproj"
             }
           }
         }
@@ -570,16 +685,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  HackerNewsStory -> HackerNewsService -> HackerNewsStory.",
-      "libraryId": "HackerNewsStory",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

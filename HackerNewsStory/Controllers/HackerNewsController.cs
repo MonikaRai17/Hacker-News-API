@@ -1,13 +1,8 @@
 ﻿
-using HackerNewsService.Service;
-using HackerNewsStory.Model;
+using HackerNewsServices.Service;
+using HackerNewsModel.Model;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
-using Newtonsoft.Json;
 using System.Net;
-
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace HackerNewsStory.Controllers
 {
@@ -22,7 +17,7 @@ namespace HackerNewsStory.Controllers
            this._hackernewsservice = hackernewsrepo;
         }
 
-        // GET: api/<HackerNews>
+        
         [HttpGet]
         public async Task<IActionResult> GetNewsStory(string? searchItem)
         {

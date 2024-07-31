@@ -40,9 +40,6 @@ C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\H
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.sourcelink.json
-C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.dll
-C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\refint\HackerNewsStory.dll
-C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.pdb
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\appsettings.json
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\HackerNewsStory.exe
@@ -55,6 +52,10 @@ C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\N
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\HackerNewsModel.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\HackerNewsServices.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\HackerNewsModel.pdb
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\bin\Debug\net8.0\HackerNewsServices.pdb
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\staticwebassets\msbuild.HackerNewsStory.Microsoft.AspNetCore.StaticWebAssets.props
@@ -64,5 +65,8 @@ C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\s
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\scopedcss\bundle\HackerNewsStory.styles.css
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNe.3ECFD7FE.Up2Date
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\refint\HackerNewsStory.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.pdb
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\HackerNewsStory.genruntimeconfig.cache
 C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsStory\obj\Debug\net8.0\ref\HackerNewsStory.dll

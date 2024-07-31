@@ -1,0 +1,12 @@
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\bin\Debug\net8.0\HackerNewsModel.deps.json
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\bin\Debug\net8.0\HackerNewsModel.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\bin\Debug\net8.0\HackerNewsModel.pdb
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.AssemblyInfoInputs.cache
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.AssemblyInfo.cs
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.csproj.CoreCompileInputs.cache
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.sourcelink.json
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\refint\HackerNewsModel.dll
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\HackerNewsModel.pdb
+C:\Users\2329810\source\repos\Hacker-News-API\HackerNewsModel\obj\Debug\net8.0\ref\HackerNewsModel.dll
