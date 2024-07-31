@@ -1,4 +1,5 @@
-﻿using HackerNewsStory.Interface;
+﻿
+using HackerNewsService.Service;
 using HackerNewsStory.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -14,12 +15,11 @@ namespace HackerNewsStory.Controllers
     [ApiController]
     public class HackerNewsController : ControllerBase
     {
-        private readonly IHackerNewsRepository _hackernewsrepo;
-        private IMemoryCache _cache;
-        public HackerNewsController(IMemoryCache cache, IHackerNewsRepository hackernewsrepo)
+        private readonly IHackerNewsService _hackernewsservice;
+        
+        public HackerNewsController(IHackerNewsService hackernewsrepo)
         {
-           this._cache = cache;
-           this._hackernewsrepo = hackernewsrepo;
+           this._hackernewsservice = hackernewsrepo;
         }
 
         // GET: api/<HackerNews>
@@ -30,28 +30,22 @@ namespace HackerNewsStory.Controllers
             List<Story> filteredstories = new List<Story>();
             try
             {
-                var response = await _hackernewsrepo.GetTopStoryList();
-                if (response.IsSuccessStatusCode)
-                {
-                    var storiesResponse = response.Content.ReadAsStringAsync().Result;
-                    var storyIds = JsonConvert.DeserializeObject<List<int>>(storiesResponse);
+                var response = await _hackernewsservice.GetTopStoryList();
+                if (response == null || response.Count == 0)
+                    return NotFound();
 
-                    if (storyIds?.Count > 0)
+                if (response!= null )
+                {
+                    if (!String.IsNullOrEmpty(searchItem))
                     {
-                        var tasks = storyIds.Select(GetStorybyID);
-                        allstories = (List<Story>)(await Task.WhenAll(tasks)).ToList();
-                        filteredstories = allstories.Where(x => x != null).ToList();
-                        if (!String.IsNullOrEmpty(searchItem))
-                        {
-                            var search = searchItem.ToLower();
-                            filteredstories = filteredstories.Where(s => s.title.ToLower().IndexOf(search) > -1).ToList();
-                        }
+                        var search = searchItem.ToLower();
+                        filteredstories = response.Where(s => s.title.ToLower().IndexOf(search) > -1).ToList();
+                        return Ok(filteredstories);
                     }
                     else
                     {
-                        return StatusCode((int)HttpStatusCode.NoContent, "No stories available!");
+                        return Ok(response);
                     }
-
                 }
                 else
                 {
@@ -63,28 +57,10 @@ namespace HackerNewsStory.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, "exception occured in API");
             }
 
-            return Ok(filteredstories);
+            
         }
 
-        // GET api/<HackerNews>/5
-        [HttpGet("{id}")]
-        public async Task<Story> GetStorybyID(int id)
-        {
-            Story? story = new Story();
-            var response = await _hackernewsrepo.GetStoryById(id);
-            if (response.IsSuccessStatusCode)
-            {
-                var storyResponse = response.Content.ReadAsStringAsync().Result;
-                story = JsonConvert.DeserializeObject<Story>(storyResponse);
-            }
-
-            if (story != null && !string.IsNullOrWhiteSpace(story.url))
-            {
-                return _cache.GetOrCreate(id, entry => story);
-            }
-            else { return null; }
-        }
-
+        
        
     }
 }

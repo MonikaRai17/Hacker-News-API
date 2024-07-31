@@ -1852,10 +1852,24 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "HackerNews.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HackerNewsStory": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HackerNews.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HackerNews.Service.dll": {}
+        }
+      },
       "HackerNewsStory/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "HackerNews.Service": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -6066,6 +6080,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "HackerNews.Service/1.0.0": {
+      "type": "project",
+      "path": "../HackerNewsService/HackerNews.Service.csproj",
+      "msbuildProject": "../HackerNewsService/HackerNews.Service.csproj"
+    },
     "HackerNewsStory/1.0.0": {
       "type": "project",
       "path": "../HackerNewsStory/HackerNewsStory.csproj",
@@ -6171,5 +6190,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  APITest -> HackerNewsStory -> HackerNews.Service -> HackerNewsStory.",
+      "libraryId": "HackerNewsStory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

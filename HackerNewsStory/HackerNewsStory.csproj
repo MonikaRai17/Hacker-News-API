@@ -11,4 +11,15 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HackerNewsService\HackerNews.Service.csproj" />
+   
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HackerNewsStory">
+      <HintPath>obj\Debug\net8.0\ref\HackerNewsStory.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
