@@ -66,8 +66,36 @@ namespace APITest.Controller
             Assert.Equal(1, returnValue.Count);
         }
 
+        [Fact]
+        public async Task HackerNewsController_ReturnsNotFOund_WhenNoStories()
+        {
+            // Arrange
+            _mockHackerNewsService.Setup(service => service.GetTopStoryList())
+                .ReturnsAsync(new List<Story>());
 
+            // Act
+            var result = await _hackernewsController.GetNewsStory("");
 
+            // Assert
+            var statusCodeResult = Assert.IsType<NotFoundResult>(result);
+            Assert.Equal(404, statusCodeResult.StatusCode);
+        }
+
+        [Fact]
+        public async Task HackerNewsController_ReturnsInternalServerError_OnException()
+        {
+            // Arrange
+            _mockHackerNewsService.Setup(service => service.GetTopStoryList())
+                .ThrowsAsync(new Exception("Internal server error"));
+
+            // Act
+            var result = await _hackernewsController.GetNewsStory("");
+
+            // Assert
+            var statusCodeResult = Assert.IsType<ObjectResult>(result);
+            Assert.Equal(500, statusCodeResult.StatusCode);
+            
+        }
 
 
     }
